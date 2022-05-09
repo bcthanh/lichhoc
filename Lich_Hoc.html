@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" lang="vi"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="keywords" content="Trung tâm Tin học Đại học Sư phạm Kỹ thuật TP. Hồ Chí Minh">
+        <meta name="description" content="Trung tâm tin học là đơn vị trực thuộc Trường đại học Sư phạm Kỹ thuật TP. Hồ Chí Minh, có hơn 30 năm kinh nghiệm trong đào tạo, bồi dưỡng và cấp các chứng chỉ tin học ứng dụng.">
+        <title>
+            Trung tâm Tin học Đại học Sư phạm Kỹ thuật TP. Hồ Chí Minh
+        </title>
+
+    <meta property="og:url" content="http://trungtamtinhoc.hcmute.edu.vn/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Trung tâm Tin học Đại học Sư phạm Kỹ thuật TP. Hồ Chí Minh">
+    <meta property="og:description" content="Trung tâm tin học là đơn vị trực thuộc Trường đại học Sư phạm Kỹ thuật TP. Hồ Chí Minh, có hơn 30 năm kinh nghiệm trong đào tạo, bồi dưỡng và cấp các chứng chỉ tin học ứng dụng.">
+    <meta property="og:image" content="~/images/logo.png">
+    <link rel="canonical" href="http://trungtamtinhoc.hcmute.edu.vn/">
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://trungtamtinhoc.hcmute.edu.vn/logo.png">
+    <link rel="stylesheet" type="text/css" href="Lich_Hoc_files/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="Lich_Hoc_files/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="Lich_Hoc_files/rsmenu-main.css">
+    <link rel="stylesheet" type="text/css" href="Lich_Hoc_files/rsmenu-transitions.css">
+    <link rel="stylesheet" type="text/css" href="Lich_Hoc_files/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="Lich_Hoc_files/style.css">
+    <link rel="stylesheet" type="text/css" href="Lich_Hoc_files/responsive.css">
+
+    
+    
+
+<style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+.fb_mpn_mobile_landing_page_slide_out{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_out_from_left{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out_from_left;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_up{animation-duration:500ms;animation-name:fb_mpn_landing_page_slide_up;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_in{animation-duration:300ms;animation-name:fb_mpn_bounce_in;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out{animation-duration:300ms;animation-name:fb_mpn_bounce_out;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out_v2{animation-duration:300ms;animation-name:fb_mpn_fade_out;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_from_left{animation-duration:300ms;animation-name:fb_bounce_in_from_left;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_from_left{animation-duration:300ms;animation-name:fb_bounce_out_from_left;transition-timing-function:ease-in}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}@keyframes fb_mpn_landing_page_slide_out{0%{margin:0 12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;margin:0 24px;width:60px}}@keyframes fb_mpn_landing_page_slide_out_from_left{0%{left:12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;left:12px;width:60px}}@keyframes fb_mpn_landing_page_slide_up{0%{bottom:0;opacity:0}100%{bottom:24px;opacity:1}}@keyframes fb_mpn_bounce_in{0%{opacity:.5;top:100%}100%{opacity:1;top:0}}@keyframes fb_mpn_fade_out{0%{bottom:30px;opacity:1}100%{bottom:0;opacity:0}}@keyframes fb_mpn_bounce_out{0%{opacity:1;top:0}100%{opacity:.5;top:100%}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_from_left{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}50%{transform:scale(1.03, 1.03);transform-origin:bottom left}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_from_left{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}}@keyframes slideInFromBottom{0%{opacity:.1;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}@keyframes slideInFromBottomDelay{0%{opacity:0;transform:translateY(100%)}97%{opacity:0;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}</style></head>
+<body class="home1">
+    
+
+    <div class="se-pre-con" style="display: none;"></div>
+    <div class="full-width-header">
+        <header id="rs-header" class="rs-header">
+            
+<div class="rs-toolbar col-xs-0 d-none d-lg-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="rs-toolbar-left">
+                    <div class="welcome-message">
+                        <i class="glyph-icon flaticon-phone-call"></i>
+                        <span>
+                                <a href="tel:0908277911">0908 277 911</a>
+
+                        </span>
+                    </div>
+
+                    <div class="welcome-message">
+                        <i class="glyph-icon flaticon-email"></i>
+                        <span>
+                            <a href="mailto:ttth@hcmute.edu.vn">ttth@hcmute.edu.vn</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="rs-header-top" style="padding-top:0px">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="logo-area">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <a href="http://trungtamtinhoc.hcmute.edu.vn/">
+                                <img src="Lich_Hoc_files/79347473-5abf-4f88-bb4a-ad260056a092.png" alt="logo" style="max-height:100px">
+                            </a>
+                        </div>
+                        <div class="col-sm-9 my-auto">
+                            <span class="h2 d-none d-sm-inline font-weight-bold text-primary">
+                                TRUNG TÂM TIN HỌC,
+                                <br>TRƯỜNG ĐẠI HỌC SƯ PHẠM KỸ THUẬT TP. HỒ CHÍ MINH
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <div class="menu-area menu-sticky sticky">
+    <div class="container">
+        <div class="main-menu">
+            <div class="row">
+                <div class="col-sm-12">
+                    <a class="rs-menu-toggle"><i class="fa fa-bars"></i>Menu</a>
+                    <nav class="rs-menu rs-menu-close" style="opacity: 1;">
+                        <ul class="nav-menu">
+                            <li>
+                                <a href="http://trungtamtinhoc.hcmute.edu.vn/">Trang chủ</a>
+                            </li>
+                            <li class="active">
+                                <a class="custom-button" href="http://trungtamtinhoc.hcmute.edu.vn/lich-khai-giang">Lịch khai giảng</a>
+                            </li>
+                            <li>
+                                <a class="custom-button" href="http://trungtamtinhoc.hcmute.edu.vn/lich-thi-chung-chi-cntt">Lịch thi chứng chỉ CNTT</a>
+                            </li>
+                            <li>
+                                <a href="http://trungtamtinhoc.hcmute.edu.vn/huong-dan-thanh-toan">Hướng dẫn thanh toán</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="javascript:void(0)">Tra cứu Điểm &amp; Chứng chỉ</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="http://trungtamtinhoc.hcmute.edu.vn/tra-cuu-diem-thi">Tra cứu điểm thi</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://trungtamtinhoc.hcmute.edu.vn/tra-cuu-chung-chi">Tra cứu chứng chỉ</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://trungtamtinhoc.hcmute.edu.vn/mau-chung-chi">Mẫu chứng chỉ</a>
+                                    </li>
+                                <div class="sub-menu-close"><i class="fa fa-times" aria-hidden="true"></i>Close</div></ul>
+                            <span class="rs-menu-parent"><i class="fa fa-angle-down" aria-hidden="true"></i></span></li>
+                            <li>
+                                <a href="http://trungtamtinhoc.hcmute.edu.vn/lien-he">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </header>
+    </div>
+    
+<!-- Breadcrumbs Start -->
+<div class="rs-breadcrumbs bg0 breadcrumbs-overlay">
+    <div class="breadcrumbs-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="page-title">Lịch khai giảng</h1>
+                    <ul>
+                        <li>
+                            <a class="active" href="http://trungtamtinhoc.hcmute.edu.vn/">Trang chủ</a>
+                        </li>
+                        <li>Lịch khai giảng</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumbs End -->
+
+<div class="rs-courses-details pt-100 pb-70">
+    <div class="container">
+        <h1 class="top-title">LỊCH KHAI GIẢNG</h1>
+        <div>
+            <p style="text-align: justify;">Chương trình học đa dạng và 
+thường xuyên cập nhật công nghệ mới. Hãy để chúng tôi đồng hành cùng bạn
+ trên hành trình chinh phục tri thức - vững vàng bước vào thế giới công 
+nghệ 4.0</p>
+<p><strong>Giờ học:</strong></p>
+<ul>
+<li>Buổi sáng: từ 8g00 đến 11g30</li>
+<li>Buổi tối: từ 18g00 đến 20g30</li>
+</ul>
+<p><strong>Ưu đãi:</strong></p>
+<ul>
+<li>Thanh toán học phí TRƯỚC ngày khai giảng: Giảm <span style="color: #ff0000;">5%</span> học phí</li>
+<li>Học viên là sinh viên, học sinh: Giảm <span style="color: #ff0000;">THÊM</span> <strong><span style="color: #ff0000;">10%</span></strong> học phí</li>
+<li>Học viên đăng ký theo NHÓM: Nhóm 3 giảm <span style="color: #ff0000;">THÊM</span> <strong><span style="color: #ff0000;">5%</span></strong> học phí, nhóm 5 giảm <span style="color: #ff0000;">THÊM</span> <strong><span style="color: #ff0000;">10%</span></strong> học phí</li>
+<li>MIỄN lệ phí thi cho các lớp trọn gói. MIỄN lệ phí cấp chứng chỉ cho các lớp ôn luyện</li>
+</ul>
+        </div>
+        <div class="well well-sm">
+                <div class="course-syllabus">
+                    <div id="accordion" class="rs-accordion-style1">
+                        <div class="card">
+                            <div class="card-header" id="heading-10030">
+                                <h3 class="acdn-title" data-toggle="collapse" data-target="#collapse-10030" aria-expanded="true" aria-controls="collapse-10030">
+                                    1. Các lớp ONLINE
+                                </h3>
+                            </div>
+                            <div class="card-body" style="padding:10px">
+                                
+                            </div>
+                            <div id="collapse-10030" class="collapse show" aria-labelledby="heading-10030" data-parent="#accordion">
+                                <div class="card-body pl-0 pr-0">
+                                    <table class="table table-hover table-bordered table footable footable-1 breakpoint-lg" data-show-toggle="false" data-expand-first="false" data-expand-all="true" style="width: 100%; display: table;">
+                                        <thead>
+                                            <tr class="footable-header">
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                            <th data-breakpoints="xs" style="display: table-cell;" class="footable-first-visible" width="100">Mã lớp</th><th style="display: table-cell;">Tên lớp</th><th data-breakpoints="xs sm" style="display: table-cell;" width="150">Buổi học</th><th data-breakpoints="xs" style="display: table-cell;" width="120">Ngày bắt đầu (dự kiến)</th><th data-breakpoints="xs sm" style="display: table-cell;" width="100">Học phí</th><th data-breakpoints="xs" style="display: table-cell;" class="footable-last-visible" width="100"></th></tr>
+                                        </thead>
+                                        <tbody>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                        <tr data-expanded="true">
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                <td style="display: table-cell;" class="footable-first-visible"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/lop-luyen-thi-cap-toc-co-ban-online-">CT15.CB.OL</a></td><td style="display: table-cell;"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/lop-luyen-thi-cap-toc-co-ban-online-">Lớp luyện thi cấp tốc cơ bản (Online)</a></td><td style="display: table-cell;">Tối T7 - CN (2 buổi)</td><td style="display: table-cell;">23/04/2022</td><td style="display: table-cell;">300.000</td><td style="display: table-cell;" class="footable-last-visible">
+                                                        <a class="btn btn-success @*btn-blinker-success*@ btn-sm" style="color:white" href="http://trungtamtinhoc.hcmute.edu.vn/dang-ky-khoa-hoc/ct15-cb-ol-toi-t7-cn-2-buoi-19-03-2022"><i class="fa fa-check-square"></i> Đăng ký</a>
+                                                    </td></tr><tr data-expanded="true">
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                <td style="display: table-cell;" class="footable-first-visible"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/luyen-thi-cap-toc-nang-cao-online-">CT15.NC.OL</a></td><td style="display: table-cell;"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/luyen-thi-cap-toc-nang-cao-online-">Luyện thi cấp tốc nâng cao (Online)</a></td><td style="display: table-cell;">Tối T7 - CN (2 buổi)</td><td style="display: table-cell;">23/04/2022</td><td style="display: table-cell;">450.000</td><td style="display: table-cell;" class="footable-last-visible">
+                                                        <a class="btn btn-success @*btn-blinker-success*@ btn-sm" style="color:white" href="http://trungtamtinhoc.hcmute.edu.vn/dang-ky-khoa-hoc/ct15-nc-ol-toi-t7-cn-2-buoi-13-03-2022"><i class="fa fa-check-square"></i> Đăng ký</a>
+                                                    </td></tr><tr data-expanded="true">
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                <td style="display: table-cell;" class="footable-first-visible"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/luyen-thi-co-ban-6-buoi-online-">L122T.OL</a></td><td style="display: table-cell;"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/luyen-thi-co-ban-6-buoi-online-">Luyện thi cơ bản 6 buổi  (Online)</a></td><td style="display: table-cell;">Tối T7 - CN (6 buổi)</td><td style="display: table-cell;">23/04/2022</td><td style="display: table-cell;">510.000</td><td style="display: table-cell;" class="footable-last-visible">
+                                                        <a class="btn btn-success @*btn-blinker-success*@ btn-sm" style="color:white" href="http://trungtamtinhoc.hcmute.edu.vn/dang-ky-khoa-hoc/l122t-ol-toi-t7-cn-6-buoi-19-03-2022"><i class="fa fa-check-square"></i> Đăng ký</a>
+                                                    </td></tr><tr data-expanded="true">
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                <td style="display: table-cell;" class="footable-first-visible"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/luyen-thi-nang-cao-6-buoi-online-">L13.NC.OL</a></td><td style="display: table-cell;"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/luyen-thi-nang-cao-6-buoi-online-">Luyện thi nâng cao 6 buổi (Online)</a></td><td style="display: table-cell;">Tối T7 - CN (6 buổi)</td><td style="display: table-cell;">23/04/2022</td><td style="display: table-cell;">800.000</td><td style="display: table-cell;" class="footable-last-visible">
+                                                        <a class="btn btn-success @*btn-blinker-success*@ btn-sm" style="color:white" href="http://trungtamtinhoc.hcmute.edu.vn/dang-ky-khoa-hoc/l13-nc-ol-toi-t7-cn-6-buoi-19-03-2022"><i class="fa fa-check-square"></i> Đăng ký</a>
+                                                    </td></tr><tr data-expanded="true">
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                <td style="display: table-cell;" class="footable-first-visible"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/chung-chi-ung-dung-cntt-co-ban-tron-goi-online-">UD12.OL</a></td><td style="display: table-cell;"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/chung-chi-ung-dung-cntt-co-ban-tron-goi-online-">Chứng chỉ Ứng dụng CNTT Cơ bản  trọn gói (Online)</a></td><td style="display: table-cell;">Tối 2 – 4 – 6 (23 buổi)</td><td style="display: table-cell;">25/04/2022</td><td style="display: table-cell;">1.590.000</td><td style="display: table-cell;" class="footable-last-visible">
+                                                        <a class="btn btn-success @*btn-blinker-success*@ btn-sm" style="color:white" href="http://trungtamtinhoc.hcmute.edu.vn/dang-ky-khoa-hoc/ud12-ol-toi-2-4-6-23-buoi-21-03-2022"><i class="fa fa-check-square"></i> Đăng ký</a>
+                                                    </td></tr><tr data-expanded="true">
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                <td style="display: table-cell;" class="footable-first-visible"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/chung-chi-ung-dung-cntt-nang-cao-tron-goi-online-">UD22.OL</a></td><td style="display: table-cell;"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/chung-chi-ung-dung-cntt-nang-cao-tron-goi-online-">Chứng chỉ Ứng dụng CNTT Nâng cao trọn gói (Online)</a></td><td style="display: table-cell;">Tối 2 – 4 – 6 (16 buổi)</td><td style="display: table-cell;">25/04/2022</td><td style="display: table-cell;">1.600.000</td><td style="display: table-cell;" class="footable-last-visible">
+                                                        <a class="btn btn-success @*btn-blinker-success*@ btn-sm" style="color:white" href="http://trungtamtinhoc.hcmute.edu.vn/dang-ky-khoa-hoc/ud22-ol-toi-2-4-6-16-buoi-21-03-2022"><i class="fa fa-check-square"></i> Đăng ký</a>
+                                                    </td></tr><tr data-expanded="true">
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                <td style="display: table-cell;" class="footable-first-visible"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/windows-va-internet-co-ban-online-">IU126</a></td><td style="display: table-cell;"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/windows-va-internet-co-ban-online-">Windows và Internet Cơ bản (Online)</a></td><td style="display: table-cell;">Tối 2 – 4 – 6  (5 buổi)</td><td style="display: table-cell;">25/04/2022</td><td style="display: table-cell;">410.000</td><td style="display: table-cell;" class="footable-last-visible">
+                                                        <a class="btn btn-success @*btn-blinker-success*@ btn-sm" style="color:white" href="http://trungtamtinhoc.hcmute.edu.vn/dang-ky-khoa-hoc/iu126-toi-2-4-6-5-buoi-21-03-2022"><i class="fa fa-check-square"></i> Đăng ký</a>
+                                                    </td></tr><tr data-expanded="true">
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                <td style="display: table-cell;" class="footable-first-visible"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/word-va-powerpoint-co-ban-online-">IU35</a></td><td style="display: table-cell;"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/word-va-powerpoint-co-ban-online-">Word và Powerpoint Cơ bản (Online)</a></td><td style="display: table-cell;">Tối 2 – 4 – 6  (10 buổi)</td><td style="display: table-cell;">09/05/2022</td><td style="display: table-cell;">700.000</td><td style="display: table-cell;" class="footable-last-visible">
+                                                        <a class="btn btn-success @*btn-blinker-success*@ btn-sm" style="color:white" href="http://trungtamtinhoc.hcmute.edu.vn/dang-ky-khoa-hoc/iu35-toi-2-4-6-10-buoi-11-03-2022"><i class="fa fa-check-square"></i> Đăng ký</a>
+                                                    </td></tr><tr data-expanded="true">
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                <td style="display: table-cell;" class="footable-first-visible"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/word-va-powerpoint-nang-cao-online-">IU79</a></td><td style="display: table-cell;"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/word-va-powerpoint-nang-cao-online-">Word và Powerpoint Nâng cao (Online)</a></td><td style="display: table-cell;">Tối 2 – 4 – 6 (9 buổi)</td><td style="display: table-cell;">25/04/2022</td><td style="display: table-cell;">950.000</td><td style="display: table-cell;" class="footable-last-visible">
+                                                        <a class="btn btn-success @*btn-blinker-success*@ btn-sm" style="color:white" href="http://trungtamtinhoc.hcmute.edu.vn/dang-ky-khoa-hoc/iu79-toi-2-4-6-9-buoi-21-03-2022"><i class="fa fa-check-square"></i> Đăng ký</a>
+                                                    </td></tr><tr data-expanded="true">
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                <td style="display: table-cell;" class="footable-first-visible"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/excel-co-ban-online-">IU04</a></td><td style="display: table-cell;"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/excel-co-ban-online-">Excel Cơ bản (Online)</a></td><td style="display: table-cell;">Tối 2 – 4 – 6 (8 buổi)</td><td style="display: table-cell;">01/06/2022</td><td style="display: table-cell;">570.000</td><td style="display: table-cell;" class="footable-last-visible">
+                                                        <a class="btn btn-success @*btn-blinker-success*@ btn-sm" style="color:white" href="http://trungtamtinhoc.hcmute.edu.vn/dang-ky-khoa-hoc/iu04-toi-2-4-6-8-buoi-28-02-2022"><i class="fa fa-check-square"></i> Đăng ký</a>
+                                                    </td></tr><tr data-expanded="true">
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                <td style="display: table-cell;" class="footable-first-visible"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/excel-nang-cao-online-">IU08</a></td><td style="display: table-cell;"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/excel-nang-cao-online-">Excel Nâng cao (Online)</a></td><td style="display: table-cell;">Tối 2 – 4 – 6  (7 buổi)</td><td style="display: table-cell;">18/05/2022</td><td style="display: table-cell;">710.000</td><td style="display: table-cell;" class="footable-last-visible">
+                                                        <a class="btn btn-success @*btn-blinker-success*@ btn-sm" style="color:white" href="http://trungtamtinhoc.hcmute.edu.vn/dang-ky-khoa-hoc/iu08-toi-2-4-6-7-buoi-21-03-2022"><i class="fa fa-check-square"></i> Đăng ký</a>
+                                                    </td></tr></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="course-syllabus">
+                    <div id="accordion" class="rs-accordion-style1">
+                        <div class="card">
+                            <div class="card-header" id="heading-25">
+                                <h3 class="acdn-title" data-toggle="collapse" data-target="#collapse-25" aria-expanded="true" aria-controls="collapse-25">
+                                    2. Lớp luyện thi  CẤP TỐC chứng chỉ Ứng dụng Công nghệ Thông tin
+                                </h3>
+                            </div>
+                            <div class="card-body" style="padding:10px">
+                                
+                            </div>
+                            <div id="collapse-25" class="collapse show" aria-labelledby="heading-25" data-parent="#accordion">
+                                <div class="card-body pl-0 pr-0">
+                                    <table class="table table-hover table-bordered table footable footable-2 breakpoint-lg" data-show-toggle="false" data-expand-first="false" data-expand-all="true" style="width: 100%; display: table;">
+                                        <thead>
+                                            <tr class="footable-header">
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                            <th data-breakpoints="xs" style="display: table-cell;" class="footable-first-visible" width="100">Mã lớp</th><th style="display: table-cell;">Tên lớp</th><th data-breakpoints="xs sm" style="display: table-cell;" width="150">Buổi học</th><th data-breakpoints="xs" style="display: table-cell;" width="120">Ngày bắt đầu (dự kiến)</th><th data-breakpoints="xs sm" style="display: table-cell;" width="100">Học phí</th><th data-breakpoints="xs" style="display: table-cell;" class="footable-last-visible" width="100"></th></tr>
+                                        </thead>
+                                        <tbody>
+                                                
+                                                
+                                        <tr data-expanded="true">
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                <td style="display: table-cell;" class="footable-first-visible"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/lop-luyen-thi-cap-toc-co-ban">CT14.CB</a></td><td style="display: table-cell;"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/lop-luyen-thi-cap-toc-co-ban">Lớp luyện thi cấp tốc cơ bản</a></td><td style="display: table-cell;">Sáng T7 - CN (2 buổi)</td><td style="display: table-cell;">19/03/2022</td><td style="display: table-cell;">400.000</td><td style="display: table-cell;" class="footable-last-visible">
+                                                        <a class="btn btn-success @*btn-blinker-success*@ btn-sm" style="color:white" href="http://trungtamtinhoc.hcmute.edu.vn/dang-ky-khoa-hoc/ct14-cb-sang-t7-cn-2-buoi-05-03-2022"><i class="fa fa-check-square"></i> Đăng ký</a>
+                                                    </td></tr><tr data-expanded="true">
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                <td style="display: table-cell;" class="footable-first-visible"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/lop-luyen-thi-cap-toc-nang-cao">CT14.NC</a></td><td style="display: table-cell;"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/lop-luyen-thi-cap-toc-nang-cao">Lớp luyện thi cấp tốc nâng cao</a></td><td style="display: table-cell;">Sáng T7 - CN (2 buổi)</td><td style="display: table-cell;">13/03/2022</td><td style="display: table-cell;">550.000</td><td style="display: table-cell;" class="footable-last-visible">
+                                                        <a class="btn btn-success @*btn-blinker-success*@ btn-sm" style="color:white" href="http://trungtamtinhoc.hcmute.edu.vn/dang-ky-khoa-hoc/ct14-nc-sang-t7-cn-2-buoi-13-03-2022"><i class="fa fa-check-square"></i> Đăng ký</a>
+                                                    </td></tr></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="course-syllabus">
+                    <div id="accordion" class="rs-accordion-style1">
+                        <div class="card">
+                            <div class="card-header" id="heading-28">
+                                <h3 class="acdn-title" data-toggle="collapse" data-target="#collapse-28" aria-expanded="true" aria-controls="collapse-28">
+                                    3. Lớp Chứng chỉ Ứng dụng Công nghệ Thông tin (Miễn lệ phí thi)
+                                </h3>
+                            </div>
+                            <div class="card-body" style="padding:10px">
+                                
+                            </div>
+                            <div id="collapse-28" class="collapse show" aria-labelledby="heading-28" data-parent="#accordion">
+                                <div class="card-body pl-0 pr-0">
+                                    <table class="table table-hover table-bordered table footable footable-3 breakpoint-lg" data-show-toggle="false" data-expand-first="false" data-expand-all="true" style="width: 100%; display: table;">
+                                        <thead>
+                                            <tr class="footable-header">
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                            <th data-breakpoints="xs" style="display: table-cell;" class="footable-first-visible" width="100">Mã lớp</th><th style="display: table-cell;">Tên lớp</th><th data-breakpoints="xs sm" style="display: table-cell;" width="150">Buổi học</th><th data-breakpoints="xs" style="display: table-cell;" width="120">Ngày bắt đầu (dự kiến)</th><th data-breakpoints="xs sm" style="display: table-cell;" width="100">Học phí</th><th data-breakpoints="xs" style="display: table-cell;" class="footable-last-visible" width="100"></th></tr>
+                                        </thead>
+                                        <tbody>
+                                                
+                                                
+                                        <tr data-expanded="true">
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                <td style="display: table-cell;" class="footable-first-visible"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/chung-chi-ung-dung-cntt-co-ban-tron-goi">UD12</a></td><td style="display: table-cell;"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/chung-chi-ung-dung-cntt-co-ban-tron-goi">Chứng chỉ Ứng dụng CNTT cơ bản trọn gói</a></td><td style="display: table-cell;">Tối 3 – 5 – 7 (23 buổi)</td><td style="display: table-cell;">21/03/2022</td><td style="display: table-cell;">1.690.000</td><td style="display: table-cell;" class="footable-last-visible">
+                                                        <a class="btn btn-success @*btn-blinker-success*@ btn-sm" style="color:white" href="http://trungtamtinhoc.hcmute.edu.vn/dang-ky-khoa-hoc/ud12-toi-3-5-7-23-buoi-01-03-2022"><i class="fa fa-check-square"></i> Đăng ký</a>
+                                                    </td></tr><tr data-expanded="true">
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                <td style="display: table-cell;" class="footable-first-visible"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/chung-chi-ung-dung-cntt-nang-cao-tron-goi">UD22</a></td><td style="display: table-cell;"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/chung-chi-ung-dung-cntt-nang-cao-tron-goi">Chứng chỉ Ứng dụng CNTT nâng cao trọn gói</a></td><td style="display: table-cell;">Tối 3 – 5 – 7 (16 buổi)</td><td style="display: table-cell;">21/03/2022</td><td style="display: table-cell;">1.700.000</td><td style="display: table-cell;" class="footable-last-visible">
+                                                        <a class="btn btn-success @*btn-blinker-success*@ btn-sm" style="color:white" href="http://trungtamtinhoc.hcmute.edu.vn/dang-ky-khoa-hoc/ud22-toi-3-5-7-16-buoi-01-03-2022"><i class="fa fa-check-square"></i> Đăng ký</a>
+                                                    </td></tr></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="course-syllabus">
+                    <div id="accordion" class="rs-accordion-style1">
+                        <div class="card">
+                            <div class="card-header" id="heading-29">
+                                <h3 class="acdn-title" data-toggle="collapse" data-target="#collapse-29" aria-expanded="true" aria-controls="collapse-29">
+                                    4. Các lớp chuyên đề (Miễn lệ phí thi)
+                                </h3>
+                            </div>
+                            <div class="card-body" style="padding:10px">
+                                
+                            </div>
+                            <div id="collapse-29" class="collapse show" aria-labelledby="heading-29" data-parent="#accordion">
+                                <div class="card-body pl-0 pr-0">
+                                    <table class="table table-hover table-bordered table footable footable-4 breakpoint-lg" data-show-toggle="false" data-expand-first="false" data-expand-all="true" style="width: 100%; display: table;">
+                                        <thead>
+                                            <tr class="footable-header">
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                            <th data-breakpoints="xs" style="display: table-cell;" class="footable-first-visible" width="100">Mã lớp</th><th style="display: table-cell;">Tên lớp</th><th data-breakpoints="xs sm" style="display: table-cell;" width="150">Buổi học</th><th data-breakpoints="xs" style="display: table-cell;" width="120">Ngày bắt đầu (dự kiến)</th><th data-breakpoints="xs sm" style="display: table-cell;" width="100">Học phí</th><th data-breakpoints="xs" style="display: table-cell;" class="footable-last-visible" width="100"></th></tr>
+                                        </thead>
+                                        <tbody>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                        <tr data-expanded="true">
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                <td style="display: table-cell;" class="footable-first-visible"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/windows-va-internet-co-ban">IU126</a></td><td style="display: table-cell;"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/windows-va-internet-co-ban">Windows và Internet Cơ bản</a></td><td style="display: table-cell;">Tối 3 – 5 – 7  (5 buổi)</td><td style="display: table-cell;">21/03/2022</td><td style="display: table-cell;">510.000</td><td style="display: table-cell;" class="footable-last-visible">
+                                                        <a class="btn btn-success @*btn-blinker-success*@ btn-sm" style="color:white" href="http://trungtamtinhoc.hcmute.edu.vn/dang-ky-khoa-hoc/iu126-toi-3-5-7-5-buoi-01-03-2022"><i class="fa fa-check-square"></i> Đăng ký</a>
+                                                    </td></tr><tr data-expanded="true">
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                <td style="display: table-cell;" class="footable-first-visible"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/word-va-powerpoint-co-ban">IU35</a></td><td style="display: table-cell;"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/word-va-powerpoint-co-ban">Word và Powerpoint Cơ bản</a></td><td style="display: table-cell;">Tối 3 – 5 – 7 (10 buổi)</td><td style="display: table-cell;">12/03/2022</td><td style="display: table-cell;">800.000</td><td style="display: table-cell;" class="footable-last-visible">
+                                                        <a class="btn btn-success @*btn-blinker-success*@ btn-sm" style="color:white" href="http://trungtamtinhoc.hcmute.edu.vn/dang-ky-khoa-hoc/iu35-toi-3-5-7-10-buoi-12-03-2022"><i class="fa fa-check-square"></i> Đăng ký</a>
+                                                    </td></tr><tr data-expanded="true">
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                <td style="display: table-cell;" class="footable-first-visible"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/word-va-powerpoint-nang-cao">IU79</a></td><td style="display: table-cell;"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/word-va-powerpoint-nang-cao">Word và Powerpoint Nâng cao</a></td><td style="display: table-cell;">Tối 3 – 5 – 7 (9 buổi)</td><td style="display: table-cell;">21/03/2022</td><td style="display: table-cell;">1.050.000</td><td style="display: table-cell;" class="footable-last-visible">
+                                                        <a class="btn btn-success @*btn-blinker-success*@ btn-sm" style="color:white" href="http://trungtamtinhoc.hcmute.edu.vn/dang-ky-khoa-hoc/iu79-toi-3-5-7-9-buoi-01-03-2022"><i class="fa fa-check-square"></i> Đăng ký</a>
+                                                    </td></tr><tr data-expanded="true">
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                <td style="display: table-cell;" class="footable-first-visible"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/excel-co-ban">IU04</a></td><td style="display: table-cell;"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/excel-co-ban">Excel Cơ bản</a></td><td style="display: table-cell;">Tối 3 – 5 – 7 (8 buổi)</td><td style="display: table-cell;">05/04/2022</td><td style="display: table-cell;">670.000</td><td style="display: table-cell;" class="footable-last-visible">
+                                                        <a class="btn btn-success @*btn-blinker-success*@ btn-sm" style="color:white" href="http://trungtamtinhoc.hcmute.edu.vn/dang-ky-khoa-hoc/iu04-toi-3-5-7-8-buoi-05-04-2022"><i class="fa fa-check-square"></i> Đăng ký</a>
+                                                    </td></tr><tr data-expanded="true">
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                <td style="display: table-cell;" class="footable-first-visible"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/excel-nang-cao">IU08</a></td><td style="display: table-cell;"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/excel-nang-cao">Excel Nâng cao</a></td><td style="display: table-cell;">Tối 3 – 5 – 7 (7 buổi)</td><td style="display: table-cell;">22/03/2022</td><td style="display: table-cell;">810.000</td><td style="display: table-cell;" class="footable-last-visible">
+                                                        <a class="btn btn-success @*btn-blinker-success*@ btn-sm" style="color:white" href="http://trungtamtinhoc.hcmute.edu.vn/dang-ky-khoa-hoc/iu08-toi-3-5-7-7-buoi-22-03-2022"><i class="fa fa-check-square"></i> Đăng ký</a>
+                                                    </td></tr><tr data-expanded="true">
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                <td style="display: table-cell;" class="footable-first-visible"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/autocad-2d">AT22</a></td><td style="display: table-cell;"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/autocad-2d">AutoCAD-2D</a></td><td style="display: table-cell;">Tối 3 – 5 – 7 (10 buổi)</td><td style="display: table-cell;">22/03/2022</td><td style="display: table-cell;">810.000</td><td style="display: table-cell;" class="footable-last-visible">
+                                                        <a class="btn btn-success @*btn-blinker-success*@ btn-sm" style="color:white" href="http://trungtamtinhoc.hcmute.edu.vn/dang-ky-khoa-hoc/at22-toi-3-5-7-10-buoi-01-03-2022"><i class="fa fa-check-square"></i> Đăng ký</a>
+                                                    </td></tr><tr data-expanded="true">
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                <td style="display: table-cell;" class="footable-first-visible"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/autocad-3d">AT32</a></td><td style="display: table-cell;"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/autocad-3d">AutoCAD-3D</a></td><td style="display: table-cell;">Tối 3 – 5 – 7 (9 buổi)</td><td style="display: table-cell;">22/03/2022</td><td style="display: table-cell;">810.000</td><td style="display: table-cell;" class="footable-last-visible">
+                                                        <a class="btn btn-success @*btn-blinker-success*@ btn-sm" style="color:white" href="http://trungtamtinhoc.hcmute.edu.vn/dang-ky-khoa-hoc/at32-toi-3-5-7-9-buoi-01-03-2022"><i class="fa fa-check-square"></i> Đăng ký</a>
+                                                    </td></tr><tr data-expanded="true">
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                <td style="display: table-cell;" class="footable-first-visible"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/photoshop">PS22</a></td><td style="display: table-cell;"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/photoshop">Photoshop</a></td><td style="display: table-cell;">Tối 2 – 4 – 6 (9 buổi)</td><td style="display: table-cell;">21/03/2022</td><td style="display: table-cell;">810.000</td><td style="display: table-cell;" class="footable-last-visible">
+                                                        <a class="btn btn-success @*btn-blinker-success*@ btn-sm" style="color:white" href="http://trungtamtinhoc.hcmute.edu.vn/dang-ky-khoa-hoc/ps22-toi-2-4-6-9-buoi-28-02-2022"><i class="fa fa-check-square"></i> Đăng ký</a>
+                                                    </td></tr><tr data-expanded="true">
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                <td style="display: table-cell;" class="footable-first-visible"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/thiet-ke-do-hoa-voi-illustrator">AI12</a></td><td style="display: table-cell;"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/thiet-ke-do-hoa-voi-illustrator">Thiết kế đồ họa với Illustrator</a></td><td style="display: table-cell;">Tối 2 – 4 – 6 (9 buổi)</td><td style="display: table-cell;">21/03/2022</td><td style="display: table-cell;">870.000</td><td style="display: table-cell;" class="footable-last-visible">
+                                                        <a class="btn btn-success @*btn-blinker-success*@ btn-sm" style="color:white" href="http://trungtamtinhoc.hcmute.edu.vn/dang-ky-khoa-hoc/ai12-toi-2-4-6-9-buoi-28-02-2022"><i class="fa fa-check-square"></i> Đăng ký</a>
+                                                    </td></tr><tr data-expanded="true">
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                <td style="display: table-cell;" class="footable-first-visible"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/solidworks-co-ban">SW22</a></td><td style="display: table-cell;"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/solidworks-co-ban">SolidWorks Cơ bản</a></td><td style="display: table-cell;">Tối 2 – 4 – 6  (10 buổi)</td><td style="display: table-cell;">21/03/2022</td><td style="display: table-cell;">1.910.000</td><td style="display: table-cell;" class="footable-last-visible">
+                                                        <a class="btn btn-success @*btn-blinker-success*@ btn-sm" style="color:white" href="http://trungtamtinhoc.hcmute.edu.vn/dang-ky-khoa-hoc/sw22-toi-2-4-6-10-buoi-28-02-2022"><i class="fa fa-check-square"></i> Đăng ký</a>
+                                                    </td></tr></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="course-syllabus">
+                    <div id="accordion" class="rs-accordion-style1">
+                        <div class="card">
+                            <div class="card-header" id="heading-30">
+                                <h3 class="acdn-title" data-toggle="collapse" data-target="#collapse-30" aria-expanded="true" aria-controls="collapse-30">
+                                    5. Các lớp lập trình (Miễn lệ phí thi)
+                                </h3>
+                            </div>
+                            <div class="card-body" style="padding:10px">
+                                
+                            </div>
+                            <div id="collapse-30" class="collapse show" aria-labelledby="heading-30" data-parent="#accordion">
+                                <div class="card-body pl-0 pr-0">
+                                    <table class="table table-hover table-bordered table footable footable-5 breakpoint-lg" data-show-toggle="false" data-expand-first="false" data-expand-all="true" style="width: 100%; display: table;">
+                                        <thead>
+                                            <tr class="footable-header">
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                            <th data-breakpoints="xs" style="display: table-cell;" class="footable-first-visible" width="100">Mã lớp</th><th style="display: table-cell;">Tên lớp</th><th data-breakpoints="xs sm" style="display: table-cell;" width="150">Buổi học</th><th data-breakpoints="xs" style="display: table-cell;" width="120">Ngày bắt đầu (dự kiến)</th><th data-breakpoints="xs sm" style="display: table-cell;" width="100">Học phí</th><th data-breakpoints="xs" style="display: table-cell;" class="footable-last-visible" width="100"></th></tr>
+                                        </thead>
+                                        <tbody>
+                                                
+                                                
+                                        <tr data-expanded="true">
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                <td style="display: table-cell;" class="footable-first-visible"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/lap-trinh-c-c-co-ban">LC12</a></td><td style="display: table-cell;"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/lap-trinh-c-c-co-ban">Lập trình C/C++ cơ bản</a></td><td style="display: table-cell;">Tối 2 – 4 – 6 (15 buổi)</td><td style="display: table-cell;">28/03/2022</td><td style="display: table-cell;">2.500.000</td><td style="display: table-cell;" class="footable-last-visible">
+                                                        <a class="btn btn-success @*btn-blinker-success*@ btn-sm" style="color:white" href="http://trungtamtinhoc.hcmute.edu.vn/dang-ky-khoa-hoc/lc12-toi-2-4-6-15-buoi-28-02-2022"><i class="fa fa-check-square"></i> Đăng ký</a>
+                                                    </td></tr><tr data-expanded="true">
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                <td style="display: table-cell;" class="footable-first-visible"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/lap-trinh-python-co-ban">LP11</a></td><td style="display: table-cell;"><a href="http://trungtamtinhoc.hcmute.edu.vn/khoa-hoc/lap-trinh-python-co-ban">Lập trình Python cơ bản</a></td><td style="display: table-cell;">Tối 3 – 5 – 7 (15 buổi)</td><td style="display: table-cell;">29/03/2022</td><td style="display: table-cell;">2.500.000</td><td style="display: table-cell;" class="footable-last-visible">
+                                                        <a class="btn btn-success @*btn-blinker-success*@ btn-sm" style="color:white" href="http://trungtamtinhoc.hcmute.edu.vn/dang-ky-khoa-hoc/lp11-toi-3-5-7-15-buoi-01-03-2022"><i class="fa fa-check-square"></i> Đăng ký</a>
+                                                    </td></tr></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+    </div>
+</div>
+
+
+    <footer id="rs-footer" class="bg3 rs-footer">
+        
+<div class="footer-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-12">
+                <div class="about-widget text-xs-center">
+                    <h5 class="footer-title text-white text-uppercase">
+                        Trung tâm Tin học Đại học Sư phạm Kỹ thuật TP. Hồ Chí Minh
+                    </h5>
+                    <div>
+                        <p class="margin-remove">
+                            </p><p><strong><em>Trung tâm Tin học Đại học Sư phạm Kỹ thuật TP. Hồ Chí Minh </em></strong></p>
+<p>Địa chỉ: Số 1 Võ Văn Ngân, P. Linh Chiểu, Q. Thủ Đức - Hotline: 0908 277 911</p>
+<p>Website: <a href="http://trungtamtinhoc.hcmute.edu.vn/">http://trungtamtinhoc.hcmute.edu.vn</a>&nbsp; -&nbsp; Email: <a href="mailto:ttth@hcmute.edu.vn">ttth@hcmute.edu.vn</a></p>
+<p><a href="https://www.facebook.com/tinhocsuphamkythuat/?ref=settings">https://www.facebook.com/tinhocsuphamkythuat</a></p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 text-xs-center">
+                <h5 class="footer-title text-white">LIÊN KẾT</h5>
+                <div class="about-widget">
+                    <p class="margin-remove">
+                        <a style="color:#e8e8e8" href="http://trungtamtinhoc.hcmute.edu.vn/lich-khai-giang">
+                            <i class="link-icon fa fa-book text-danger" style="margin-right:15px"></i> Lịch khai giảng
+                        </a>
+                    </p>
+                    <p class="margin-remove">
+                        <a style="color:#e8e8e8" href="http://trungtamtinhoc.hcmute.edu.vn/lich-thi-chung-chi-cntt">
+                            <i class="link-icon fa fa-book text-danger" style="margin-right:15px"></i> Lịch thi chứng chỉ CNTT
+                        </a>
+                    </p>
+                    <p class="margin-remove">
+                        <a style="color:#e8e8e8" href="http://trungtamtinhoc.hcmute.edu.vn/chinh-sach-uu-dai">
+                            <i class="link-icon fa fa-book text-danger" style="margin-right:15px"></i> Chính sách ưu đãi
+                        </a>
+                    </p>
+                    <p class="margin-remove">
+                        <a style="color:#e8e8e8" href="http://trungtamtinhoc.hcmute.edu.vn/huong-dan-thanh-toan">
+                            <i class="link-icon fa fa-book text-danger" style="margin-right:15px"></i> Hướng dẫn thanh toán
+                        </a>
+                    </p>
+                    <p class="margin-remove">
+                        <a style="color:#e8e8e8" href="http://trungtamtinhoc.hcmute.edu.vn/tra-cuu-diem-thi">
+                            <i class="link-icon fa fa-book text-danger" style="margin-right:15px"></i> Tra cứu điểm thi
+                        </a>
+                    </p>
+                    <p class="margin-remove">
+                        <a style="color:#e8e8e8" href="http://trungtamtinhoc.hcmute.edu.vn/tra-cuu-chung-chi">
+                            <i class="link-icon fa fa-book text-danger" style="margin-right:15px"></i> Tra cứu chứng chỉ
+                        </a>
+                    </p>
+                    <p class="margin-remove">
+                        <a style="color:#e8e8e8" href="http://trungtamtinhoc.hcmute.edu.vn/lien-he">
+                            <i class="link-icon fa fa-book text-danger" style="margin-right:15px"></i> Liên hệ
+                        </a>
+                    </p>
+
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 text-xs-center">
+                <h5 class="footer-title">
+                    FAQ - HỎI ĐÁP
+                </h5>
+                <a href="https://www.facebook.com/tinhocsuphamkythuat/" target="_blank" class="margin-remove" style="color:white">
+                    <img src="Lich_Hoc_files/faq.png" class="img-responsive" width="100">
+                </a>
+            </div>
+        </div>
+        <div class="footer-share">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/tinhocsuphamkythuat/" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/tinhocsuphamkythuat/" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/tinhocsuphamkythuat/" target="_blank">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="footer-bottom">
+    <div class="container">
+        <div class="copyright">
+            <p>
+                © Copyright 2014 | Trung tâm Tin học Đại học Sư phạm Kỹ thuật TP. Hồ Chí Minh
+            </p>
+        </div>
+    </div>
+</div>
+
+<style>
+    @media (max-width: 768px) {
+        .footer-top .text-xs-center {
+            text-align: center !important;
+        }
+        .link-icon{
+            display:none !important;
+        }
+        .rs-footer .footer-title:after {
+                display:none !important;
+        }
+        .footer-title {
+            color: #b6e1ff !important;
+        }
+    }
+</style>
+    </footer>
+    <div id="scrollUp" style="display: block;">
+        <i class="fa fa-angle-up"></i>
+    </div>
+    <div class="modal fade" id="modal-generic-popup" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Notification</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        ×
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <span id="popupMessage"></span>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal">
+                        <i class="ace-icon fa fa-reply bigger-110"></i> Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     <!-- Your customer chat code -->
+      <script src="Lich_Hoc_files/sdk_002.js" async="" crossorigin="anonymous"></script><script id="facebook-jssdk" src="Lich_Hoc_files/xfbml.js"></script><script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v8.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script><style>
+#scrollUp {
+    text-align: center;
+    bottom: 150px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    right: 35px;
+    z-index: 999;
+}
+[name=f131583eb7d10c4]{
+z-index:10 !important;
+}
+</style><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div><div class=" fb_iframe_widget fb_invisible_flow" fb-iframe-plugin-query="app_id=1940499616262104&amp;attribution=setup_tool&amp;container_width=1349&amp;current_url=http%3A%2F%2Ftrungtamtinhoc.hcmute.edu.vn%2Flich-khai-giang&amp;is_loaded_by_facade=true&amp;local_state=%7B%22v%22%3A1%2C%22path%22%3A2%2C%22chatState%22%3A1%2C%22visibility%22%3A%22hidden%22%2C%22showUpgradePrompt%22%3A%22not_shown%22%2C%22shouldShowLoginPage%22%3Afalse%7D&amp;locale=vi_VN&amp;log_id=6db3990c-d076-483b-8b67-c16d66c66060&amp;logged_in_greeting=Xin%20ch%C3%A0o%2C%20Trung%20T%C3%A2m%20c%C3%B3%20th%E1%BB%83%20gi%C3%BAp%20g%C3%AC%20cho%20b%E1%BA%A1n%20%3F&amp;logged_out_greeting=Xin%20ch%C3%A0o%2C%20Trung%20T%C3%A2m%20c%C3%B3%20th%E1%BB%83%20gi%C3%BAp%20g%C3%AC%20cho%20b%E1%BA%A1n%20%3F&amp;page_id=376477205826057&amp;request_time=1651757305475&amp;sdk=joey"><span style="vertical-align: bottom; width: 1000px; height: 0px;"><iframe name="f3dd4fd3cb12352" data-testid="dialog_iframe" title="" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" style="padding: 0px; position: fixed; z-index: 2147483646; border-radius: 16px; top: auto; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; width: 399px; bottom: 84px; max-height: 0px; right: 16px;" src="Lich_Hoc_files/customerchat.html" class="" width="1000px" height="1000px" frameborder="0"></iframe></span></div><div class=" fb_iframe_widget fb_invisible_flow" fb-iframe-plugin-query="app_id=1940499616262104&amp;attribution=setup_tool&amp;container_width=1349&amp;current_url=http%3A%2F%2Ftrungtamtinhoc.hcmute.edu.vn%2Flich-khai-giang&amp;is_loaded_by_facade=true&amp;local_state=%7B%22v%22%3A1%2C%22path%22%3A2%2C%22chatState%22%3A1%2C%22visibility%22%3A%22hidden%22%2C%22showUpgradePrompt%22%3A%22not_shown%22%2C%22shouldShowLoginPage%22%3Afalse%7D&amp;locale=vi_VN&amp;log_id=2bc7af28-bcaf-4710-a04e-1f5d80c1b2a4&amp;logged_in_greeting=Xin%20ch%C3%A0o%2C%20Trung%20T%C3%A2m%20c%C3%B3%20th%E1%BB%83%20gi%C3%BAp%20g%C3%AC%20cho%20b%E1%BA%A1n%20%3F&amp;logged_out_greeting=Xin%20ch%C3%A0o%2C%20Trung%20T%C3%A2m%20c%C3%B3%20th%E1%BB%83%20gi%C3%BAp%20g%C3%AC%20cho%20b%E1%BA%A1n%20%3F&amp;page_id=376477205826057&amp;request_time=1651757305722&amp;sdk=joey"><span style="vertical-align: bottom; width: 1000px; height: 0px;"><iframe name="fa391a2d80e852" data-testid="dialog_iframe" title="" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" style="padding: 0px; position: fixed; z-index: 2147483646; border-radius: 16px; top: auto; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; width: 399px; bottom: 84px; max-height: 0px; right: 16px;" src="Lich_Hoc_files/customerchat_002.html" class="" width="1000px" height="1000px" frameborder="0"></iframe></span></div><div class="fb_dialog  fb_dialog_advanced" alignment="right" desktop_bottom_spacing="24"><div class="fb_dialog_content"><iframe name="blank_f3dd4fd3cb12352" tabindex="-1" data-testid="bubble_iframe" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" style="background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; border-radius: 60px; bottom: 24px; box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px 0px; display: block; height: 60px; margin: 0px 12px; overflow: visible; padding: 0px; position: fixed; right: 12px; top: auto; width: 60px; z-index: 2147483644;" src="Lich_Hoc_files/bubble_006.html" width="60px" frameborder="0"></iframe><iframe name="availabilityStatus_f3dd4fd3cb12352" tabindex="-1" data-testid="availabilityStatus_iframe" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" style="border-radius: 50%; bottom: 21.5px; height: 15px; position: fixed; right: 24px; width: 15px; z-index: 2147483646;" src="Lich_Hoc_files/bubble_006.html" frameborder="0"></iframe><iframe name="unread_f3dd4fd3cb12352" tabindex="-1" data-testid="unread_iframe" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" style="background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; border-radius: 4pt; bottom: 68px; height: 24px; position: fixed; right: 22px; width: 20px; z-index: 2147483645;" src="Lich_Hoc_files/bubble_006.html" frameborder="0"></iframe></div></div><div class="fb_dialog  fb_dialog_advanced" alignment="right" desktop_bottom_spacing="24"><div class="fb_dialog_content"><iframe name="blank_fa391a2d80e852" tabindex="-1" data-testid="bubble_iframe" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" style="background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; border-radius: 60px; bottom: 24px; box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px 0px; display: block; height: 60px; margin: 0px 12px; overflow: visible; padding: 0px; position: fixed; right: 12px; top: auto; width: 60px; z-index: 2147483644;" src="Lich_Hoc_files/bubble_006.html" width="60px" frameborder="0"></iframe><iframe name="availabilityStatus_fa391a2d80e852" tabindex="-1" data-testid="availabilityStatus_iframe" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" style="border-radius: 50%; bottom: 21.5px; height: 15px; position: fixed; right: 24px; width: 15px; z-index: 2147483646;" src="Lich_Hoc_files/bubble_006.html" frameborder="0"></iframe><iframe name="unread_fa391a2d80e852" tabindex="-1" data-testid="unread_iframe" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" style="background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; border-radius: 4pt; bottom: 68px; height: 24px; position: fixed; right: 22px; width: 20px; z-index: 2147483645;" src="Lich_Hoc_files/bubble_006.html" frameborder="0"></iframe></div></div></div><script async="" defer="defer" crossorigin="anonymous" src="Lich_Hoc_files/sdk.js"></script>
+    
+    <script src="Lich_Hoc_files/modernizr-2.js"></script>
+    <script src="Lich_Hoc_files/jquery.js"></script>
+    <script src="Lich_Hoc_files/bootstrap.js"></script>
+    <!-- counter top js -->
+    <!-- magnific popup -->
+    <!-- rsmenu js -->
+    <script src="Lich_Hoc_files/rsmenu-main.js"></script>
+    <!-- plugins js -->
+    <script src="Lich_Hoc_files/plugins.js"></script>
+    <!-- Switch js -->
+    <!-- main js -->
+    <script src="Lich_Hoc_files/main.js"></script>
+    <script src="Lich_Hoc_files/site.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            if (document.getElementById("popupMessage").innerHTML != "") {
+                $('#modal-generic-popup').modal('show');
+                setInterval(ClosePopup, 5 * 1000);
+            }
+        });
+    </script>
+    
+    <link href="Lich_Hoc_files/footable.css" rel="stylesheet">
+    <script src="Lich_Hoc_files/footable.js"></script>
+    <script>
+        $(function () {
+            $('.table').footable();
+        })
+    </script>
+    <style>
+        .table thead th {
+            vertical-align: middle !important;
+        }
+        @media (max-width: 767px) {
+            .footable-header th.footable-first-visible {
+                display: none !important;
+            }
+
+            .footable-first-visible {
+                font-weight: bold !important;
+                background-color: #bcd2e2 !important;
+            }
+
+            .footable-details th {
+                background-color: white !important;
+                color: #000000 !important;
+                font-weight: bold !important;
+            }
+        }
+    </style>
+
+
+    
+
+
+
+</body></html>
